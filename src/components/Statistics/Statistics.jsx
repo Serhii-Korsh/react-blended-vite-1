@@ -15,7 +15,7 @@ export const Statistics = ({ title, stats }) => {
   return (
     <>
       
-     {title && <h3 className={style.title}>{title} </h3>}
+    {title && <h3 className={style.title}>{title} </h3>}
 
       <ul className={style.list}>
         {stats.map(stat => {
