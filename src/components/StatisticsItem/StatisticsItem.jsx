@@ -1,11 +1,11 @@
 import style from './Statistics.module.css';
 
-export const StatisticsItem = ({ stat, icon: Icon }) => {
+export const StatisticsItem = ({ title, total, icon: Icon }) => {
   return (
     <>
-      <Icon />
-      <span className={style.counter}>{stat.total}</span>
-      <p className={style.text}>{stat.title}</p>
+      <Icon size={22} color={'#1b3a4b'} />
+      <span className={style.counter}>{total}</span>
+      <p className={style.text}>{title}</p>
     </>
   );
 };
